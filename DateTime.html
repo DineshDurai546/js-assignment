@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<title>Show Date and Time</title> 
+		<script>
+		var today=new Date();
+		var day=today.getDay();
+		var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+		document.write("Today is :  " + daylist[day] );
+		document.write("<br>")
+		
+		
+		
+		//var hour = today.getHours();
+		//var minute = today.getMinutes();
+		//var second = today.getSeconds();
+		//var dt = new Date();
+		var h =  today.getHours(), m = today.getMinutes(), s=today.getSeconds();
+		var _time = (h > 12) ? (h-12 + ' PM :' + m +':'+ s ) : (h + ' AM :' + m + ':' + s );
+		document.write("Current Time is :  "+_time);
+		</script>
+	</body>
+</html>
