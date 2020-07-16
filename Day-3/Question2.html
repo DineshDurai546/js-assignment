@@ -1,0 +1,17 @@
+<html>
+	<body>
+		Enter OS Name  &nbsp;
+		<input type="text" id="os"><br><br>
+		Enter version    &nbsp; &nbsp; &nbsp;
+		<input type="text" id="version"><br><br>
+		<input type="submit" value="Submit" onclick="Check()" >
+		<script>
+			function Check()
+			{ 
+			var o=document.getElementById("os").value
+			var v=document.getElementById("version").value
+			console.log("The OS name is  "+ o + " And Version is "+ v);
+			}
+		</script>
+	</body>
+</html>

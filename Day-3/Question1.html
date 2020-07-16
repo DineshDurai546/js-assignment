@@ -1,0 +1,22 @@
+<html>
+	<body>
+	Enter a number
+	<input type="text" id="number" name="number"><br>
+	<input type="submit" value="Click" onclick="Check()">
+		<script>
+			function Check()
+			{
+				var n;
+				n=document.getElementById("number").value
+				if(n%2==0)
+				{
+				console.log("The Number Entered Is "+ n +" and Number is Even");
+				}
+				else
+				{
+				console.log("The Number Entered Is "+n +" and Number is odd");
+				}
+			}
+		</script>
+	</body>
+</html>
