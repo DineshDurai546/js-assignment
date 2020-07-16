@@ -1,0 +1,31 @@
+<!--
+localeCompare():-
+This method returns a number indicating whether a reference string comes before or after or is the same as the given string in sorted order.
+Return Value:-
+0 − If the string matches 100%.
+
+1 − no match, and the parameter value comes before the string object's value in the locale sort order
+
+-1 −no match, and the parameter value comes after the string object's value in the local sort order
+-->
+<html>
+   <head>
+      <title>JavaScript String localeCompare() Method</title>
+   </head>
+   
+   <body>   
+      <script type = "text/javascript">
+         var str1 = new String( "JavaScript" );
+         var index = str1.localeCompare( "xyz" );
+         document.write("localeCompare first :" + index ); 
+         
+         document.write("<br />" );          
+         var index1 = str1.localeCompare( "Java" );
+         document.write("localeCompare second :" + index1); 
+		 
+		 document.write("<br />" );          
+         var index2 = str1.localeCompare( "JavaScript" );
+         document.write("localeCompare third :" + index2 ); 
+      </script>      
+   </body>
+</html>
